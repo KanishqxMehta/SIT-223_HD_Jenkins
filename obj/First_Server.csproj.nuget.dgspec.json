@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/First_Server.csproj": {}
+  },
+  "projects": {
+    "/Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/First_Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/First_Server.csproj",
+        "projectName": "First_Server",
+        "projectPath": "/Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/First_Server.csproj",
+        "packagesPath": "/Users/kanishqmehta/.nuget/packages/",
+        "outputPath": "/Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kanishqmehta/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "NewtonSoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Net.Http.Formatting.Extension": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
