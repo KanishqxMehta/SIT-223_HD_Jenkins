@@ -26,7 +26,7 @@ app.MapGet("geocode/{location}", async (string location) =>
             var geocodeData = Newtonsoft.Json.JsonConvert.DeserializeObject<GeocodeData>(geocodeResponseString);
 
             
-            var locationDetails = $"Location details for {location}:\n{geocodeData.Results[0].FormattedAddress}\nLatitude: {geocodeData.Results[0].Geometry.Location.Lat}\nLongitude: {geocodeData.Results[0].Geometry.Location.Lng}";
+            var locationDetails = $"Location details for {location}:\n{geocodeData!.Results[0].FormattedAddress}\nLatitude: {geocodeData.Results[0].Geometry.Location.Lat}\nLongitude: {geocodeData.Results[0].Geometry.Location.Lng}";
 
             // Get latitude and longitude for the Elevation API request
             float latitude = geocodeData.Results[0].Geometry.Location.Lat;
@@ -46,7 +46,7 @@ app.MapGet("geocode/{location}", async (string location) =>
 
                 var elevationData = Newtonsoft.Json.JsonConvert.DeserializeObject<ElevationData>(elevationResponseString);
                 // Ensure there are results before accessing Elevation
-                if (elevationData.Results.Length > 0)
+                if (elevationData!.Results.Length > 0)
                 {
                     var elevationDetails = $"Elevation: {elevationData.Results[0].Elevation} meters";
                     // Return combined location and elevation details
@@ -82,13 +82,13 @@ public class GeocodeData
 
 public class Result
 {
-    public string FormattedAddress { get; set; }
-    public Geometry Geometry { get; set; }
+    public string? FormattedAddress { get; set; }
+    public Geometry? Geometry { get; set; }
 }
 
 public class Geometry
 {
-    public Location Location { get; set; }
+    public Location? Location { get; set; }
 }
 
 public class Location
@@ -100,7 +100,7 @@ public class Location
 // Define classes to represent the structure of the Google Maps Elevation API response
 public class ElevationData
 {
-    public ElevationResult[] Results { get; set; }
+    public ElevationResult[]? Results { get; set; }
 }
 
 public class ElevationResult
