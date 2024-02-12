@@ -28,3 +28,4 @@
 /Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/bin/Debug/net8.0/System.Net.Http.Formatting.dll
 /Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/bin/Debug/net8.0/System.Net.Http.Primitives.dll
 /Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/obj/Debug/net8.0/First_Server.csproj.CopyComplete
+/Users/kanishqmehta/Desktop/University Prac Files/SIT 331/First_one/First_Server/obj/Debug/net8.0/First_Server.sourcelink.json
